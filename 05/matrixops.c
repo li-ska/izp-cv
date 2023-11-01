@@ -26,7 +26,7 @@ void transpose (int n, int a[n][n]) {
   return;
 }
 
-/* součet dvo matic stejného typu uloží do třetí matice */
+/* součet dvou matic stejného typu uloží do třetí matice */
 void add (int m, int n, int a[m][n], int b[m][n], int c[m][n]) {
 
             /*  DOPLŇTE  */
