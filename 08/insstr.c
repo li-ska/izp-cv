@@ -9,9 +9,10 @@
 #define pmsg(...) {}
 #endif
 
-int insertStr (char *si, char *st, int k) {
+/* Do řetězce *st vloží na pozici k řetězec si. */
+int insertStr (char *si, char **st, int k) {
   int li = strlen(si);
-  int lt = strlen(st);
+  int lt = strlen(*st);
   if (li == 0) return 0;     // hotovo, prázdná akce
   if (k<0 || k>lt) return 2; // chybná pozice
 
@@ -27,9 +28,10 @@ int main (void) {
   strcpy(st, "abcd");
 
   printf("%s\n", st);
-  e = insertStr("XY", st, 1);
+  e = insertStr("XY", &st, 1);
   if (e == 0) printf("%s\n", st);
   else fprintf(stderr, "wrong position\n");
 
+  free(st);
   return e;
 }
