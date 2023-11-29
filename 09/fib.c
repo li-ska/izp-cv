@@ -5,8 +5,7 @@ typedef unsigned long int uli;
 
 // Naivně zapsaná funkce fib, exponenciální složitost
 uli fib_exp (ui n) {
-  return n>1 ? fib_exp(n-2)+fib_exp(n-1) : n;
-  //return ... ; // Napište podle definice, s použitím podmíněného výrazu
+  // return ... ; // Napište podle definice, s použitím podmíněného výrazu
 }
 
 
