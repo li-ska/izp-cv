@@ -37,7 +37,7 @@ Object *listHead (List s) {
 
 // Vrátí zbytek neprázdného seznamu (tím změní s), anebo NULL
 // Přitom dealokuje paměť prvnímu uzlu (ztrácí se tím odkaz na prvek)
-List listTail (List s) {
+List listTail (List *s) {
 
   /*  DOPLŇTE  */
 
