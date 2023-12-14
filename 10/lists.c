@@ -28,6 +28,13 @@ List listCons (Object *px, List *s) {
   return ln;
 }
 
+// Test na prázdnost seznamu
+bool listNull (List s) {
+
+  /*  DOPLŇTE  */
+
+}
+
 // Vrátí ukazatel na první prvek neprázdného seznamu, anebo NULL
 Object *listHead (List s) {
 
@@ -48,13 +55,6 @@ List listTail (List *s) {
 void listFree (List s) {
   while (s != NULL)  s = listTail(s);
   return;
-}
-
-// Test na prázdnost seznamu
-bool listNull (List s) {
-
-  /*  DOPLŇTE  */
-
 }
 
 // Počet prvků seznamu
